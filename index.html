@@ -13,12 +13,12 @@
 <body>
         <div id="main">
                 <div id="header">
-                        <!-- Begin Nav -->
+                        <!-- Begin: Nav -->
                         <div id="nav">
                                 <li><a href="">Home</a></li>
-                                <li><a href="">Band</a></li>
-                                <li><a href="">Tour</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li><a href="#about">Band</a></li>
+                                <li><a href="#tour">Tour</a></li>
+                                <li><a href="#contact">Contact</a></li>
                                 <li>
                                         <a href="#">More <i class="nav-arrow-down ti-angle-down"></i></a>
                                         <ul class="subnav">
@@ -96,11 +96,54 @@
                                 <div class="content-section">
                                         <div class="section-heading text-white">TOUR DATES</div>
                                         <div class="section-sub-heading text-white">Remember to book your tickets!</div>
+                                        <!--Begin: Ticket -->
                                         <ul class="ticket-list">
                                                 <li>September <span class="sold-out">Sold out</span></li>
                                                 <li>October <span class="sold-out">Sold out</span></li>
                                                 <li>November <span class="quantity">3</span></li>
                                         </ul>
+                                        <!-- End: Ticket -->
+
+                                        <!-- Begin: Place -->
+                                        <div class="place-list">
+                                                <div class="place-item">
+                                                        <img src="/assets/img/places/newyork.jpg" alt="New York"
+                                                                class="place-img">
+                                                        <div class="place-body">
+                                                                <h3 class="place-heading">New York</h3>
+                                                                <p class="place-time">Fri 27 Nov 2016</p>
+                                                                <p class="place-description">Praesent tincidunt
+                                                                        sedtellus ut rutrum sed vitae justo.</p>
+                                                                <button class="place-buy-btn js-buy-btn">Buy Tickets</b>
+                                                        </div>
+                                                </div>
+
+                                                <div class="place-item">
+                                                        <img src="/assets/img/places/paris.jpg" alt="Paris"
+                                                                class="place-img">
+                                                        <div class="place-body">
+                                                                <h3 class="place-heading">Paris</h3>
+                                                                <p class="place-time">Sat 28 Nov 2016</p>
+                                                                <p class="place-description">Praesent tincidunt
+                                                                        sedtellus ut rutrum sed vitae justo.</p>
+                                                                <button class="place-buy-btn js-buy-btn">Buy Tickets</b>
+                                                        </div>
+                                                </div>
+
+                                                <div class="place-item">
+                                                        <img src="/assets/img/places/sanfran.jpg" alt="San Francisco"
+                                                                class="place-img">
+                                                        <div class="place-body">
+                                                                <h3 class="place-heading">San Francisco</h3>
+                                                                <p class="place-time">Sun 29 Nov 2016</p>
+                                                                <p class="place-description">Praesent tincidunt
+                                                                        sedtellus ut rutrum sed vitae justo.</p>
+                                                                <button class="place-buy-btn js-buy-btn">Buy Tickets</b>
+                                                        </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                        </div>
+                                        <!-- End: Place -->
                                 </div>
                         </div>
 
@@ -117,10 +160,71 @@
                                 </div>
                         </div>
 
+                        <div id="footer"></div>
                 </div>
-
-                <div id="footer"></div>
         </div>
+
+        <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                        <div class="modal-close js-modal-close">
+                                <i class="ti-close"></i>
+                        </div>
+
+                        <header class="modal-header">
+                                <i class="ti-bag modal-heading-icon"></i>
+                                Tickets
+                        </header>
+
+                        <div class="modal-body">
+                                <label for="modal-quantity" class="modal-label">
+                                        <i class="ti-shopping-cart"></i>
+                                        Tickets, $15 per person
+                                </label>
+                                <input id="modal-quantity" type="text" class="modal-input" placeholder="How many?">
+
+                                <label for="modal-email" class="modal-label">
+                                        <i class="ti-user"></i>
+                                        Send To
+                                </label>
+                                <input id="modal-email" type="email" class="modal-input" placeholder="Enter email">
+
+                                <button id="buy-tickets">
+                                        Pay
+                                        <i class="ti-check"></i>
+                                </button>
+                        </div>
+                        <footer class="modal-footer">
+                                <p class="modal-help">Need <a href="#">help?</a></p>
+                        </footer>
+                </div>
+        </div>
+
+        <script>
+                const buyBtns = document.querySelectorAll(".js-buy-btn");
+                const modal = document.querySelector(".js-modal");
+                const modalClose = document.querySelector(".js-modal-close");
+                const modalContainer = document.querySelector(".js-modal-container");
+
+                function showBuyTicket() {
+                        modal.classList.add("open");
+                }
+
+                function hideBuyTicket() {
+                        modal.classList.remove("open");
+                }
+
+                for (const buyBtn of buyBtns) {
+                        buyBtn.addEventListener("click", showBuyTicket);
+                }
+
+                modalClose.addEventListener("click", hideBuyTicket);
+
+                modal.addEventListener("click", hideBuyTicket);
+
+                modalContainer.addEventListener("click", function () {
+                        event.stopPropagation();
+                });
+        </script>
 </body>
 
 </html>
