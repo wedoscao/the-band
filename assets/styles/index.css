@@ -1,0 +1,233 @@
+/* Reset CSS */
+* {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-sizing: border-box;
+}
+
+html {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 100%;
+}
+
+.clear {
+        clear: both;
+}
+
+.text-white {
+        color: white !important;
+}
+
+#main {
+        --header-height: 46.5px;
+}
+
+#header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 1rem;
+        height: var(--header-height);
+        background-color: rgb(0, 0, 0);
+        z-index: 10;
+}
+
+#nav,
+.subnav {
+        list-style: none;
+}
+
+#nav {
+        display: inline-block;
+}
+
+#nav li {
+        display: inline-block;
+}
+
+#nav > li > a {
+        color: white;
+        text-transform: uppercase;
+}
+
+#nav li a {
+        text-decoration: none;
+        line-height: var(--header-height);
+        padding: 0 24px;
+        display: inline-block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+        color: #000;
+        background-color: #ccc;
+}
+
+#nav .subnav {
+        display: none;
+        min-width: 160px;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav li {
+        display: block;
+}
+
+#nav .subnav a {
+        padding: 0 12px;
+        display: block;
+        color: black;
+        line-height: 38px;
+}
+
+#nav li:hover .subnav {
+        display: block;
+}
+
+#nav .nav-arrow-down {
+        font-size: 0.9rem;
+}
+
+#header .search-btn {
+        float: right;
+        line-height: var(--header-height);
+        padding: 0 23px;
+        cursor: pointer;
+}
+
+#header .search-btn:hover {
+        background-color: #f44336;
+}
+
+#header .search-btn .search-icon {
+        color: white;
+        font-weight: 900;
+        font-size: 0.8rem;
+}
+
+#slider {
+        position: relative;
+        margin-top: var(--header-height);
+        padding-top: 50%;
+        background: url("/assets/img/slider/chicago.jpg") top center / cover
+                no-repeat;
+}
+
+#slider .text-content {
+        position: absolute;
+        bottom: 48px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+}
+
+#slider .text-heading {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 25px;
+}
+
+#slider .text-description {
+        font-weight: 900;
+        font-size: 15px;
+}
+
+#content {
+}
+
+#content .content-section {
+        height: auto;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 64px 0;
+}
+
+#content .section-heading {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+}
+
+#content .section-heading,
+#content .section-sub-heading {
+        text-align: center;
+}
+
+#content .section-sub-heading {
+        font-size: 1rem;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-style: italic;
+        opacity: 0.7;
+}
+
+#content .about-text {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.6;
+}
+
+#content .member-list {
+        margin-top: 48px;
+}
+
+#content .member-list .member-item {
+        float: left;
+        width: calc(100% / 3);
+        text-align: center;
+}
+
+#content .member-list .member-name {
+        font-size: 1rem;
+}
+
+#content .member-list .member-img {
+        margin-top: 15px;
+        width: 60%;
+        border-radius: 4px;
+}
+
+#tour {
+        background-color: #000;
+}
+
+#tour .ticket-list {
+        background-color: #fff;
+        margin-top: 40px;
+        list-style: none;
+}
+
+.ticket-list li {
+        color: #757575;
+        font-size: 1rem;
+        padding: 10px 16px;
+        border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+        background-color: #f44336;
+        color: #fff;
+        padding: 3px 4px;
+        margin-left: 16px;
+}
+
+.ticket-list .quantity {
+        float: right;
+        width: 24px;
+        height: 24px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 24px;
+        margin-top: -3px;
+}
+
+#footer {
+}

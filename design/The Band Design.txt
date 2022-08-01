@@ -1,0 +1,27 @@
+Source: https://www.w3schools.com/w3css/tryw3css_templates_band.htm#
+
+Components:
+1. Header:
+        - Navigation:
+                + Home
+                + Band
+                + Tour
+                + Contact
+                + More: 
+                        * Merchandise
+                        * Extras
+                        * Media
+        - Search button
+2. Slider
+3. Content: 
+        - About
+        - Tour
+        - Contact
+        - Img
+4. Footer
+
+Question:
+1. Position
+2. Size
+3. Color
+4. Style
