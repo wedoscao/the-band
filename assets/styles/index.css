@@ -229,5 +229,60 @@ html {
         margin-top: -3px;
 }
 
+.place-list {
+        margin: 32px -8px 0;
+        padding-bottom: 48px;
+}
+
+.place-item {
+        float: left;
+        width: calc(100% / 3);
+        padding: 0 8px;
+}
+
+.place-img {
+        width: 100%;
+        display: block;
+}
+
+.place-img:hover {
+        opacity: 0.6;
+}
+
+.place-body {
+        background-color: #fff;
+        padding: 16px;
+        font-size: 1rem;
+}
+
+.place-heading {
+        font-size: 1rem;
+        font-weight: bold;
+}
+
+.place-time {
+        opacity: 0.6;
+        margin-top: 15px;
+}
+
+.place-description {
+        margin-top: 15px;
+        line-height: 1.4;
+}
+
+.place-buy-btn {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 10px 12px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+}
+
+.place-buy-btn:hover {
+        background-color: #ccc;
+        color: #000;
+}
+
 #footer {
 }
