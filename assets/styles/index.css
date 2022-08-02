@@ -173,7 +173,7 @@ html {
         position: relative;
         margin-top: var(--header-height);
         padding-top: 50%;
-        background: url("/assets/img/slider/chicago.jpg") top center / cover
+        background: url("../img/slider/chicago.jpg") top center / cover
                 no-repeat;
 }
 
@@ -194,6 +194,7 @@ html {
 #slider .text-description {
         font-weight: 900;
         font-size: 15px;
+        text-shadow: 0 0 1px black;
 }
 
 /* Content */
