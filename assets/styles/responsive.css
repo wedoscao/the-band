@@ -12,6 +12,18 @@
                 width: 100%;
         }
 
+        .s-mt-8 {
+                margin-top: 8px !important;
+        }
+
+        .s-mt-16 {
+                margin-top: 16px !important;
+        }
+
+        .s-full-width {
+                width: 100% !important;
+        }
+
         #header {
                 overflow: hidden;
         }
