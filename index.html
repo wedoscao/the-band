@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The Band</title>
+        <link rel="icon" href="/assets/img/icon/icon.png">
         <link rel="stylesheet" href="./assets/styles/index.css" />
+        <link rel="stylesheet" href="./assets/styles/responsive.css" />
         <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css" />
 </head>
 
@@ -15,12 +17,15 @@
                 <div id="header">
                         <!-- Begin: Nav -->
                         <div id="nav">
-                                <li><a href="">Home</a></li>
+                                <li><a href="#">Home</a></li>
                                 <li><a href="#about">Band</a></li>
                                 <li><a href="#tour">Tour</a></li>
                                 <li><a href="#contact">Contact</a></li>
                                 <li>
-                                        <a href="#">More <i class="nav-arrow-down ti-angle-down"></i></a>
+                                        <a href="#">
+                                                More 
+                                                <i class="nav-arrow-down ti-angle-down"></i>
+                                        </a>
                                         <ul class="subnav">
                                                 <li><a href="#">Merchandise</a></li>
                                                 <li><a href="#">Extras</a></li>
@@ -30,11 +35,14 @@
                         </div>
                         <!-- End: Nav -->
 
-                        <!-- Begin: Search button -->
+                        <!-- Search button -->
                         <div class="search-btn">
                                 <i class="search-icon ti-search"></i>
                         </div>
-                        <!-- End: Search button -->
+
+                        <div class="mobile-menu-btn js-mobile-menu-btn">
+                                <i class="menu-icon ti-menu"></i>
+                        </div>
                 </div>
 
                 <div id="slider">
@@ -68,27 +76,26 @@
                                                 veniam,
                                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                 consequat.</p>
-                                        <div class="member-list">
+                                        <div class="row member-list">
 
-                                                <div class="member-item">
+                                                <div class="col col-third text-center s-col-full mt-32">
                                                         <p class="member-name">Name</p>
                                                         <img src="./assets/img/band/bandmember.jpg" alt="Name"
                                                                 class="member-img">
                                                 </div>
 
-                                                <div class="member-item">
+                                                <div class="col col-third text-center s-col-full mt-32">
                                                         <p class="member-name">Name</p>
                                                         <img src="./assets/img/band/bandmember.jpg" alt="Name"
                                                                 class="member-img">
                                                 </div>
 
-                                                <div class="member-item">
+                                                <div class="col col-third text-center s-col-full mt-32">
                                                         <p class="member-name">Name</p>
                                                         <img src="./assets/img/band/bandmember.jpg" alt="Name"
                                                                 class="member-img">
                                                 </div>
                                         </div>
-                                        <div class="clear"></div>
                                 </div>
                         </div>
 
@@ -105,8 +112,8 @@
                                         <!-- End: Ticket -->
 
                                         <!-- Begin: Place -->
-                                        <div class="place-list">
-                                                <div class="place-item">
+                                        <div class="row place-list">
+                                                <div class="col col-third s-col-full mt-16">
                                                         <img src="/assets/img/places/newyork.jpg" alt="New York"
                                                                 class="place-img">
                                                         <div class="place-body">
@@ -114,11 +121,11 @@
                                                                 <p class="place-time">Fri 27 Nov 2016</p>
                                                                 <p class="place-description">Praesent tincidunt
                                                                         sedtellus ut rutrum sed vitae justo.</p>
-                                                                <button class="place-buy-btn js-buy-btn">Buy Tickets</b>
+                                                                <button class="place-buy-btn js-buy-btn s-full-width">Buy Tickets</b>
                                                         </div>
                                                 </div>
 
-                                                <div class="place-item">
+                                                <div class="col col-third s-col-full mt-16">
                                                         <img src="/assets/img/places/paris.jpg" alt="Paris"
                                                                 class="place-img">
                                                         <div class="place-body">
@@ -126,11 +133,11 @@
                                                                 <p class="place-time">Sat 28 Nov 2016</p>
                                                                 <p class="place-description">Praesent tincidunt
                                                                         sedtellus ut rutrum sed vitae justo.</p>
-                                                                <button class="place-buy-btn js-buy-btn">Buy Tickets</b>
+                                                                <button class="place-buy-btn js-buy-btn s-full-width">Buy Tickets</b>
                                                         </div>
                                                 </div>
 
-                                                <div class="place-item">
+                                                <div class="col col-third s-col-full mt-16">
                                                         <img src="/assets/img/places/sanfran.jpg" alt="San Francisco"
                                                                 class="place-img">
                                                         <div class="place-body">
@@ -138,10 +145,10 @@
                                                                 <p class="place-time">Sun 29 Nov 2016</p>
                                                                 <p class="place-description">Praesent tincidunt
                                                                         sedtellus ut rutrum sed vitae justo.</p>
-                                                                <button class="place-buy-btn js-buy-btn">Buy Tickets</b>
+                                                                <button class="place-buy-btn js-buy-btn s-full-width">Buy Tickets</b>
                                                         </div>
                                                 </div>
-                                                <div class="clear"></div>
+
                                         </div>
                                         <!-- End: Place -->
                                 </div>
@@ -151,16 +158,59 @@
                                 <div class="content-section">
                                         <div class="section-heading">CONTACT</div>
                                         <div class="section-sub-heading">Fan? Drop a note!</div>
+                                        <div class="row contact-content">
+                                                <div class="col col-half s-col-full contact-info">
+                                                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                                                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                                                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                                                </div>
+                                                <div class="col col-half s-col-full contact-form s-mt-32">
+                                                        <form action="">
+                                                                <div class="row">
+                                                                        <div class="col s-col-full col-half s-mt-8">
+                                                                                <input type="text" required name=""
+                                                                                        id="" placeholder="Name"
+                                                                                        class="form-control">
+                                                                        </div>
+                                                                        <div class="col s-col-full col-half s-mt-8">
+                                                                                <input type="email" required name=""
+                                                                                        id="" placeholder="Email"
+                                                                                        class="form-control">
+
+                                                                        </div>
+
+                                                                </div>
+                                                                <div class="row mt-8">
+                                                                        <div class="col col-full">
+                                                                                <input type="text" required name=""
+                                                                                        id="" placeholder="Message"
+                                                                                        class="form-control">
+                                                                        </div>
+                                                                </div>
+                                                                <input class="form-submit-btn mt-16 s-full-width" type="submit"
+                                                                        value="SEND">
+                                                        </form>
+                                                </div>
+
+                                        </div>
                                 </div>
                         </div>
 
-                        <div id="img">
-                                <div class="content-section">
-
-                                </div>
+                        <div class="map-section">
+                                <img src="/assets/img/map.jpg" alt="map">
                         </div>
 
-                        <div id="footer"></div>
+                        <div id="footer" class="text-center">
+                                <div class="socials-list">
+                                        <a href=""><i class="ti-facebook"></i></a>
+                                        <a href=""><i class="ti-instagram"></i></a>
+                                        <a href=""><i class="ti-youtube"></i></a>
+                                        <a href=""><i class="ti-pinterest"></i></a>
+                                        <a href=""><i class="ti-twitter"></i></a>
+                                        <a href=""><i class="ti-linkedin"></i></a>
+                                </div>
+                                <p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+                        </div>
                 </div>
         </div>
 
@@ -198,6 +248,36 @@
                         </footer>
                 </div>
         </div>
+
+        <script>
+                const header = document.querySelector("#header");
+                const mobileMenu = document.querySelector(".js-mobile-menu-btn");
+                const headerHeight = header.clientHeight;
+
+                mobileMenu.onclick = function() {
+                        let isClosed = header.clientHeight === headerHeight;
+;                       
+                        if (isClosed) {
+                                header.style.height = "auto";
+                        } else {
+                                header.style.height = null;
+                        }
+                }
+
+                const menuItems = document.querySelectorAll("#nav li a[href*='#']");
+
+                for (const menuItem of menuItems) {
+                        menuItem.onclick = function(event) {
+                                let isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains("subnav");
+                                if (isParentMenu) {
+                                        event.preventDefault();
+                                } else {
+                                        header.style.height = null;
+                                }
+                        } 
+                }
+                
+        </script>
 
         <script>
                 const buyBtns = document.querySelectorAll(".js-buy-btn");
