@@ -233,11 +233,7 @@ html {
 
 /* About */
 #content .member-list {
-        margin-top: 48px;
-}
-
-#content .member-list .member-item {
-        text-align: center;
+        margin-top: 32px;
 }
 
 #content .member-list .member-name {
@@ -288,7 +284,7 @@ html {
 }
 
 .place-list {
-        margin-top: 32px;
+        margin-top: 16px;
 }
 
 .place-img {
