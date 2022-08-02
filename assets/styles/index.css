@@ -131,6 +131,11 @@ html {
         font-size: 0.9rem;
 }
 
+#header .mobile-menu-btn {
+        display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
         float: right;
         line-height: var(--header-height);
@@ -142,10 +147,19 @@ html {
         background-color: #f44336;
 }
 
-#header .search-btn .search-icon {
+#header .mobile-menu-btn:hover {
+        background-color: #ccc;
+}
+
+#header .menu-icon,
+#header .search-icon {
         color: white;
         font-weight: 900;
         font-size: 0.8rem;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+        color: #000;
 }
 
 /* Slider */
