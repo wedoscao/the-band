@@ -146,6 +146,7 @@ html {
         line-height: var(--header-height);
         padding: 0 23px;
         cursor: pointer;
+        -webkit-appearance: none;
 }
 
 #header .search-btn:hover {
