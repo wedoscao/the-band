@@ -342,6 +342,15 @@ html {
         margin-top: 48px;
 }
 
+.contact-content a {
+        color: #1818ee;
+        opacity: 0.8;
+}
+
+.contact-content a:hover {
+        opacity: 1;
+}
+
 .contact-info {
         font-size: 1.2rem;
         line-height: 1.6;
